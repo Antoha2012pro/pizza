@@ -1,0 +1,13 @@
+html {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: $accent-bcg-gradient-color1;
+    font-family: "TikTok Sans", sans-serif;
+    // font-family: "Montserrat", sans-serif;
+    // font-family: "Alex Brush", cursive;
+    // background-color: $black-color;
+}

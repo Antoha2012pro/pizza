@@ -1,0 +1,177 @@
+.hero {
+    padding: 30px 0px 71px 0px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 76px;
+    }
+
+    &__section:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__title {
+        color: $title-color;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.1;
+
+        &-svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+
+        &-span {
+            color: $white-color;
+        }
+    }
+
+    &__btn {
+        max-width: 277px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 3;
+
+        &-order {
+            border-radius: 71px;
+            padding: 12px 50px 12px 51px;
+            z-index: 5;
+            background-size: 300% 100%;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-image: $accent-btn-gradient-color;
+
+            &:hover,
+            &:focus {
+                background-position: 50% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            &-span {
+                color: $title-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+        }
+
+        &-menu {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            padding: 12px 25px 12px 60px;
+            border-radius: 71px;
+            z-index: 4;
+            background-size: 300% 100%;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-image: $accent-btn-gradient-color;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+                height: 90%;
+                background: $btn-bcg-color;
+                border-radius: 71px;
+                z-index: -1;
+            }
+
+            &:hover,
+            &:focus {
+                background-position: 50% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            &-span {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.2;
+                background: linear-gradient(262deg, #FF6432 12.12%, #FFA228 86.72%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                z-index: 7;
+            }
+        }
+    }
+
+    &__video {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-text {
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        &-box {
+            position: relative;
+            width: 194px;
+            height: 138px;
+        }
+
+        &-btn {
+            position: absolute;
+            inset: 50%;
+            transform: translate(-50%, -50%);
+            width: 58px;
+            height: 58px;
+            background: $accent-text-gradient-color;
+            border-radius: 50%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 50%;
+                transform: translate(-50%, -50%);
+                width: 93%;
+                height: 93%;
+                border-radius: 50%;
+                background-color: $btn-bcg-color;
+            }
+
+            &-svg {}
+        }
+
+        &-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
