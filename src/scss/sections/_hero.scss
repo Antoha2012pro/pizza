@@ -21,25 +21,40 @@
         &::before {
             content: "";
             position: absolute;
-            bottom: -54px;
-            left: -93px;
-            width: 213px;
-            height: 226px;
+            bottom: -24px;
+            left: -43px;
+            width: 110px;
+            height: 117px;
             background-image: url("../img/fries-hero.webp");
             background-repeat: no-repeat;
             background-size: contain;
+
+            @media (min-width: 728px) {
+                bottom: -54px;
+                left: -93px;
+                width: 213px;
+                height: 226px;
+            }
+
         }
 
         &::after {
             content: "";
             position: absolute;
-            top: -74px;
-            right: -67px;
-            width: 213px;
-            height: 226px;
+            top: -44px;
+            right: -47px;
+            width: 130px;
+            height: 130px;
             background-image: url("../img/pizza-hero.webp");
             background-repeat: no-repeat;
             background-size: contain;
+
+            @media (min-width: 728px) {
+                top: -74px;
+                right: -67px;
+                width: 213px;
+                height: 226px;
+            }
         }
     }
 
