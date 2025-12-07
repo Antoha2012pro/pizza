@@ -20,3 +20,10 @@ $title-color: #FFFFFF;
 $svg-color: #FFFFFF;
 
 $white-color: #FFFFFF;
+
+
+
+:root {
+  --accent-gradient-color1: #{$accent-gradient-color1};
+  --accent-gradient-color2:   #{$accent-gradient-color2};
+}

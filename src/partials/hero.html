@@ -1,35 +1,75 @@
 <section class="hero">
     <div class="container">
         <div class="hero__section">
-            <img src="#" alt="Pizza" class="hero__img">
+            <picture>
+                <source type="image/webp" srcset="./img/desktop/desktop-pizza-hero@1x.webp 1x, 
+                                ./img/desktop/desktop-pizza-hero@2x.webp 2x, 
+                                ./img/desktop/desktop-pizza-hero@3x.webp 3x" media="(min-width: 728px)">
+                <source type="image/webp" srcset="./img/mobile/mobile-pizza-hero@1x.webp 1x, 
+                                ./img/mobile/mobile-pizza-hero@2x.webp 2x, 
+                                ./img/mobile/mobile-pizza-hero@3x.webp 3x" media="(max-width: 727px)">
+                <img src="./img/pizza-hero.png" alt="Pizza" class="hero__img">
+            </picture>
         </div>
 
         <div class="hero__section">
             <div class="hero__infos">
                 <h2 class="hero__title">
-                    The Fastest Pizza <svg class="hero__title-svg"><use href="./img/symbol-defs.svg#icon-bag"></use>
-                    </svg> Delivery
+                    <span class="hero__title-row hero__title-row--top">
+                        The Fastest
+                    </span>
+
+                    <span class="hero__title-row hero__title-row--bottom">
+                        <span>Pizza</span>
+                        <svg class="hero__title-svg" aria-hidden="true">
+                            <use href="#icon-bag"></use>
+                        </svg>
+                        <span>Delivery</span>
+                    </span>
+
+                    <svg class="hero__title-arrow" aria-hidden="true">
+                        <use href="#icon-arrow-right"></use>
+                    </svg>
                 </h2>
+
                 <p class="hero__text">We will deliver juicy pizza for your family in 30 minutes, if the courier is late
                     -
                     <span class="hero__text-span">pizza is free!</span>
                 </p>
             </div>
 
-            <div class="hero__btn">
-                <button class="hero__btn-order">
-                    <span class="hero__btn-order-span">To order</span>
-                </button>
-                <button class="hero__btn-menu">
-                    <span class="hero__btn-menu-span">Pizza-Menu</span>
-                </button>
-            </div>
+            <div class="hero__box">
+                <div class="hero__btn">
+                    <button class="hero__btn-btn hero__btn-order">
+                        <span class="hero__btn-order-span">To order</span>
+                    </button>
+                    <button class="hero__btn-btn hero__btn-menu">
+                        <span class="hero__btn-menu-span" data-text="Pizza-Menu">Pizza-Menu</span>
+                    </button>
+                    <svg class="hero__btn-arrow" aria-hidden="true">
+                        <use href="#icon-arrow-right"></use>
+                    </svg>
+                </div>
 
-            <div class="hero__video">
-                <p class="hero__video-text">Cooking process:</p>
-                <div class="hero__video-box">
-                    <button class="hero__video-btn"></button>
-                    <img src="#" alt="Video Image" class="hero__video-img">
+                <div class="hero__video">
+                    <p class="hero__video-text">Cooking process:</p>
+                    <div class="hero__video-box">
+                        <button class="hero__video-btn">
+                            <svg class="hero__video-btn-svg">
+                                <use href="#icon-play-video"></use>
+                            </svg>
+                        </button>
+
+                        <picture>
+                            <source type="image/webp" srcset="./img/desktop/desktop-video-hero@1x.webp 1x, 
+                                ./img/desktop/desktop-video-hero@2x.webp 2x, 
+                                ./img/desktop/desktop-video-hero@3x.webp 3x" media="(min-width: 728px)">
+                            <source type="image/webp" srcset="./img/mobile/mobile-video-hero@1x.webp 1x, 
+                                ./img/mobile/mobile-video-hero@2x.webp 2x, 
+                                ./img/mobile/mobile-video-hero@3x.webp 3x" media="(max-width: 727px)">
+                            <img src="./img/video-hero.png" alt="Video Image" class="hero__video-img">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </div>
